@@ -58,7 +58,7 @@ def send_email(content):
 
     try:
         smtp = smtplib.SMTP_SSL(host, port)
-        smtp.login(sender, '91tanyawei')
+        smtp.login(sender, '********')
         smtp.sendmail(sender, receiver, msg.as_string())
         logger.info("send email success")
     except Exception, e:
